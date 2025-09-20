@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoom Logo</title>
+  <style type="text/css" media="all">
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+
+    .c {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* পুরো লোগো */
+    .c-main-bg-box {
+      display: flex;
+      height: 400px;
+      width: 400px;
+      border-radius: 10px;
+      background-image: linear-gradient(-140deg, red, blue);
+      animation: zoom 2.5s ease-in-out infinite;
+    }
+
+    .c-l-bb {
+      border: 50px solid #fff;
+      border-top: none;
+      border-right: none;
+      height: 75%;
+      width: 75%;
+    }
+
+    .c-box-squ {
+      height: 70%;
+      width: 70%;
+      border: 25px solid #fff;
+      border-radius: 20px;
+    }
+
+    .c-fill {
+      height: 100%;
+      width: 100%;
+    }
+
+    .c-c-lgo {
+      height: 50%;
+      width: 50%;
+      border: 20px solid #fff;
+      border-radius: 10px;
+      border-right: none;
+    }
+
+    .c-s {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      border-radius: 50px;
+      position: absolute;
+      top: 40px;
+      right: 45px;
+      border: 10px solid #F62C2C;
+    }
+
+    /* Zoom animation */
+    @keyframes zoom {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="c c-main-bg-box">
+    <div class="c-s"></div>
+    <div class="c c-l-bb">
+      <div class="c c-box-squ">
+        <div class="c c-fill">
+          <div class="c c-c-lgo"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
